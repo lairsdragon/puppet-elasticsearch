@@ -52,22 +52,18 @@ class elasticsearch::config {
       ensure  => 'directory',
       group   => undef,
       mode    => '0644',
-      recurse => true
     }
 
     file { $elasticsearch::params::homedir:
       ensure  => 'directory',
-      recurse => true
     }
 
     file { $elasticsearch::plugindir:
       ensure  => 'directory',
-      recurse => true
     }
 
     file { $elasticsearch::datadir:
       ensure  => 'directory',
-      recurse => true
     }
 
 
